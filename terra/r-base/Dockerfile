@@ -27,6 +27,7 @@ RUN export DEBIAN_FRONTEND=noninteractive; apt-get -y update \
 
 
 RUN Rscript -e 'install.packages(c("terra"), dependencies = TRUE, repos = "https://cloud.r-project.org")'
+
 RUN git clone   https://github.com/rspatial/terra.git
 RUN R CMD build terra
 RUN R CMD INSTALL terra_*tar.gz

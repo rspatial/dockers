@@ -1,7 +1,7 @@
 ## Emacs, make this -*- mode: sh; -*-
 
-## start with the Rocker Debian-based r-devel-san
-FROM rocker/r-devel-san:latest
+## start with the Rocker
+FROM rocker/r-devel-ubsan-clang:latest
 
 MAINTAINER "Robert Hijmans" 
 
